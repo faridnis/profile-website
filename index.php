@@ -47,7 +47,7 @@
             <a href="#section4"><span class="fa fa-id-card mr-3"></span> Contact</a>
           </li>
           <li>
-            <a href="#"><span class="fa fa-download mr-3 notif"><small class="d-flex align-items-center justify-content-center">5</small></span> CV Download</a>
+            <a href="/download_file/food.pdf" download><span class="fa fa-download mr-3 notif"><small class="d-flex align-items-center justify-content-center">2</small></span> CV Download</a>
           </li>
           <li>
             <a href="#"><span class="fa fa-sign-out mr-3"></span> Signout</a>
@@ -84,6 +84,24 @@
         <div class="main" id="section1">
             <h2 class="mb-4">About</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aut reprehenderit sit tempore? Mollitia nemo quibusdam ipsum saepe ducimus recusandae explicabo amet quas blanditiis nihil magni commodi hic sint, modi totam consequatur rem soluta? Beatae minus consequatur sapiente, tenetur quas quae, error ratione dolores veniam quisquam molestiae at vero mollitia.</p>
+            <section>
+              <h4>Myself</h4>
+              <button>
+                <?php
+                $file = 'download_file/food.pdf';
+                if(!file){
+                    die('Error: file not found');
+                }else{
+                    header("Cache-Control: public");
+                    header("Content-Description: File Transfer");
+                    header("Content-Disposition: attachment; filename=$file");
+                    header("Content-Type: application/pdf");
+                    header("Content-Transfer-Encoding: binary");
+                    readfile($file);
+                }
+                ?>              
+              </button>
+            </section>
           </div>
           <div class="main" id="section2">
             <h2 class="mb-4">Project Completed</h2>
