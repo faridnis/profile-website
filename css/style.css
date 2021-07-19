@@ -8427,6 +8427,7 @@ html{
 }
 
 #section3{
+  padding: 50px;
   display: inline-block;
   align-items: center;
   justify-content: center;
@@ -8434,6 +8435,7 @@ html{
 }
 
 #section4{
+  padding: 50px;
   background-color: #17a2b8;
   display: inline-block;
   align-items: center;
