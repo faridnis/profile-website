@@ -54,9 +54,9 @@
           </li>
 
           <div class="social_media">
-              <a href="#"><i class="fa fa-facebook mr-3"></i></a>
-              <a href="#"><i class="fa fa-twitter mr-3"></i></a>
-              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="www.facebook.com"><i class="fa fa-facebook mr-3"></i></a>
+              <a href="www.twitter.com"><i class="fa fa-twitter mr-3"></i></a>
+              <a href="www.intagram.com"><i class="fa fa-instagram"></i></a>
           </div>
         </ul>
 
