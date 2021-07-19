@@ -8174,7 +8174,9 @@ h1, h2, h3, h4, h5,
   background-position: center center; }
 
 .wrapper {
-  width: 100%; }
+  width: fit-content;
+  height: auto;
+}
 
 #sidebar {
   min-width: 300px;
@@ -8188,7 +8190,8 @@ h1, h2, h3, h4, h5,
   #sidebar .h6 {
     color: #fff; }
   #sidebar.active {
-    margin-left: -300px; }
+    margin-left: -300px;
+  }
     #sidebar.active .custom-menu {
       margin-right: -50px; }
     #sidebar.active .btn.btn-primary:before {
@@ -8372,28 +8375,7 @@ a[data-toggle="collapse"] {
 
 /* This section is from my own code */
 
-/* Scrolling-box */
-/* body {
-  background-color: #333;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-} */
-
-/* nav {
-  background-color: #000;
-  display: block;
-  padding: 1em 0;
-  text-align: center;
-  width: 200px;
-} */
-
-/* nav a {
-  color: #fff;
-  margin: 0 1em;
-  text-decoration: none;
-} */
+/* Scrolling-box and section*/
 
 html{
   scroll-behavior: smooth;
@@ -8407,6 +8389,7 @@ html{
   scroll-behavior: smooth;
   text-align: center;
   width: 100%;
+  overflow: auto;
 }
 
 #section1{
@@ -8414,7 +8397,7 @@ html{
   display: inline-block;
   align-items: center;
   justify-content: center;
-  height: 90%;
+  height: 25%;
 }
 
 #section2{
@@ -8423,7 +8406,7 @@ html{
   display: inline-block;
   align-items: center;
   justify-content: center;
-  height: 90%;
+  height: 25%;
 }
 
 #section3{
@@ -8431,7 +8414,7 @@ html{
   display: inline-block;
   align-items: center;
   justify-content: center;
-  height: 90%;
+  height: 25%;
 }
 
 #section4{
@@ -8440,8 +8423,37 @@ html{
   display: inline-block;
   align-items: center;
   justify-content: center;
-  height: 90%;
+  height: 20%;
 }
+
+#downloadcv{
+  bottom: 2rem;
+  align-items: flex-end;
+}
+
+
+/* sidebar social media section */
+
+.wrapper #sidebar .social_media{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.wrapper #sidebar .social_media a{
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 40px;
+  text-align: center;
+  margin: 0 5px;
+  color: #bdb8d7;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
 
 
 /* Scroll to top button */
@@ -8464,4 +8476,14 @@ html{
 
 #myBtn:hover {
   background-color: #555;
+}
+
+/* Sticky section title */
+.main .mb-4{
+  position: sticky;
+  @media (min-height: 130px) {
+    h2{
+      position: sticky;
+    }
+  }
 }

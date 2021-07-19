@@ -47,16 +47,16 @@
             <a href="#section4"><span class="fa fa-id-card mr-3"></span> Contact</a>
           </li>
           <li>
-            <a href="/download_file/food.pdf" download><span class="fa fa-download mr-3 notif"><small class="d-flex align-items-center justify-content-center">2</small></span> CV Download</a>
+            <a href="#section1"><span class="fa fa-download mr-3 notif"><small class="d-flex align-items-center justify-content-center">2</small></span> CV Download</a>
           </li>
           <li>
             <a href="#"><span class="fa fa-sign-out mr-3"></span> Signout</a>
           </li>
 
           <div class="social_media">
-              <a href="#"><i class="fab fa-facebook"></i>></a>
-              <a href="#"><i class="fab fa-twitter"></i>></a>
-              <a href="#"><i class="fab fa-instagram"></i>></a>
+              <a href="#"><i class="fa fa-facebook mr-3"></i></a>
+              <a href="#"><i class="fa fa-twitter mr-3"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
           </div>
         </ul>
 
@@ -81,27 +81,10 @@
           </section>
       </div> -->
       <div class="section">
+
         <div class="main" id="section1">
-            <h2 class="mb-4">About</h2>
+            <h2 class="mb-3">Hello there and nice to meet ya!</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aut reprehenderit sit tempore? Mollitia nemo quibusdam ipsum saepe ducimus recusandae explicabo amet quas blanditiis nihil magni commodi hic sint, modi totam consequatur rem soluta? Beatae minus consequatur sapiente, tenetur quas quae, error ratione dolores veniam quisquam molestiae at vero mollitia.</p>
-            <section>
-              <h4>Myself</h4>
-              <button>
-                <?php
-                $file = 'download_file/food.pdf';
-                if(!file){
-                    die('Error: file not found');
-                }else{
-                    header("Cache-Control: public");
-                    header("Content-Description: File Transfer");
-                    header("Content-Disposition: attachment; filename=$file");
-                    header("Content-Type: application/pdf");
-                    header("Content-Transfer-Encoding: binary");
-                    readfile($file);
-                }
-                ?>              
-              </button>
-            </section>
           </div>
           <div class="main" id="section2">
             <h2 class="mb-4">Project Completed</h2>
@@ -114,6 +97,10 @@
           <div class="main" id="section4">
             <h2 class="mb-4">Contact</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aut reprehenderit sit tempore? Mollitia nemo quibusdam ipsum saepe ducimus recusandae explicabo amet quas blanditiis nihil magni commodi hic sint, modi totam consequatur rem soluta? Beatae minus consequatur sapiente, tenetur quas quae, error ratione dolores veniam quisquam molestiae at vero mollitia.</p>
+            <section id="downloadcv">
+              <h4 class="mb-2">Know more about me</h4>
+              <button type="submit" onclick="window.open('download_file/food.pdf')">Download CV</button>
+            </section>
           </div>
 
           <button onclick="topFunction()" id="myBtn" title="Go to top">Home</button>
