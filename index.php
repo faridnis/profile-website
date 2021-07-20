@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 		
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.css"> 
   </head>
   <body>
 		
@@ -54,9 +54,9 @@
           </li>
 
           <div class="social_media">
-              <a href="www.facebook.com"><i class="fa fa-facebook mr-3"></i></a>
-              <a href="www.twitter.com"><i class="fa fa-twitter mr-3"></i></a>
-              <a href="www.intagram.com"><i class="fa fa-instagram"></i></a>
+              <a href="https://www.facebook.com/robertdowneyjr"><i class="fa fa-facebook mr-3"></i></a>
+              <a href="https://twitter.com/robertdowneyjr?lang=en"><i class="fa fa-twitter mr-3"></i></a>
+              <a href="https://www.instagram.com/robertdowneyjr/?hl=en"><i class="fa fa-instagram"></i></a>
           </div>
         </ul>
 
